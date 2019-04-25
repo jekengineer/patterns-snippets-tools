@@ -2,5 +2,7 @@
 Contains personal snippets, patterns, and tools used in software.
 
 They are sorted by technology (language) and then sorted by specific product (software application).
+
 For example if I am writing a python pattern then it would have its own place in the Python folder.
+
 If I write a C# snippet that is only applicable for use with ESRI's ArcGIS Pro, then it will be in the C# folder under the Application Specific Folder, under the ArcGIS Pro folder.
