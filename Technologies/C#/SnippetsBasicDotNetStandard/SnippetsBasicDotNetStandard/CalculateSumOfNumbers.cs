@@ -5,9 +5,7 @@ namespace SnippetsBasicDotNetStandard
 {
     public class CalculateSumOfNumbers
     {
-        // Given three numbers A, B, C you have to write a function named calcSum() which takes these 3 numbers as arguments and returns their sum.
-
-        // given two or more numbers
+        // This will calculate the sum of numbers in a list or in an array
 
         public long Calculate(List<long> numbersToAdd)
         {
@@ -16,8 +14,7 @@ namespace SnippetsBasicDotNetStandard
 
         public long Calculate(long[] numbersToAdd)
         {
-            List<long> numbersToAddConversionList = new List<long>();
-            numbersToAddConversionList.AddRange(numbersToAdd);
+            List<long> numbersToAddConversionList = new List<long>(numbersToAdd);
             return Addition(numbersToAddConversionList);
         }
 
@@ -33,7 +30,7 @@ namespace SnippetsBasicDotNetStandard
         }
 
 
-
+        // Tests
 
         public long AdditionTest(List<long> numbersToAdd)
         {
