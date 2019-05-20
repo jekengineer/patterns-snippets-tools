@@ -13,7 +13,7 @@ namespace Examples
             Console.WriteLine("Starting Examples for Snippiets Basic Dot Net Standard!");
 
             CalculateSumOfNumbersExample();
-
+            FindNumberOfJewelsInStoneExample();
 
         }
 
@@ -36,6 +36,29 @@ namespace Examples
 
 
         }
+
+
+
+        protected static void FindNumberOfJewelsInStoneExample()
+        {
+            string jewels = "aA";
+            string stones = "aAAbbbb";
+
+            FindNumberOfJewelsInStone findNumberOfJewelsInStone = new FindNumberOfJewelsInStone();
+
+            int jewelsInStones = findNumberOfJewelsInStone.NumJewelsInStones(jewels, stones);
+            Console.WriteLine("The number of Jewels in this Stone is " + jewelsInStones);       // Correct answer should be 3
+
+            jewels = "z";
+            stones = "ZZZZZ";
+            jewelsInStones = findNumberOfJewelsInStone.NumJewelsInStones(jewels, stones);
+            Console.WriteLine("The number of Jewels in this Stone is " + jewelsInStones);   // Correct answer should be 0
+
+        }
+
+
+
+
 
 
     }
